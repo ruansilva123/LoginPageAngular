@@ -1,14 +1,19 @@
 <main>
-    <section>
+    <section class="form-section">
         <img src="assets/svg/logo-name.svg" alt="logo-name">
-        <h2></h2>
-        <button>oi</button>
-        <div>
-            <span>or</span>
+        <h2>{{ title }}</h2>
+        <ng-content></ng-content>
+        <div class="btn-wrapper">
+            <button class="btn-primary">{{ primaryBtnText }}</button>
+            <div class="divider">
+                <div></div>
+                <span>or</span>
+                <div></div>
+            </div>
+            <button class="btn-secondary">{{ secondaryBtnText }}</button>
         </div>
-        <button>oi</button>
     </section>
-    <section>
+    <section class="main-section">
         <h1>Fast deliveries, Fastry! </h1>
         <img src="assets/svg/truck.svg" alt="truck-ilustration">
     </section>
