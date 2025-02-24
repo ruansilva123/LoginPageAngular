@@ -21,6 +21,10 @@ main {
         flex-grow: 1;
 
         background-color: $gray-bg;
+
+        img {
+            width: 500px;
+        }
     }
 
     .form-section {
@@ -80,6 +84,10 @@ main {
                     color: white;
     
                     box-shadow: 0px 8px 12px rgba(148.23004603385925, 64.33935597538498, 255, 0.20000000298023224);
+
+                    &:disabled {
+                        opacity: 0.8;
+                    }
                 }
     
                 &.btn-secondary {
