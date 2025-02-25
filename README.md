@@ -57,3 +57,29 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Use Dockerfile
+
+Tutorial for non-static application.
+
+- Verify if you have docker in your machine:
+
+        docker run hello-world
+
+- Create docker image:
+
+        docker build -t angular-docker .
+
+- Run image:
+
+        docker run -p 4200:4200 angular-docker
+
+## Stop Container
+
+- List containers in execution:
+
+        docker ps
+
+- Stop Container:
+
+        docker stop <id-container>
